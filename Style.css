@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+    color: #333;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 80px;
+}
+
+.navbar {
+    background-color:#25291C;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100vw;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.navbar h1{
+    color:#E3E7D3;
+    padding-left: 100px;
+    padding-right: 200px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+#mode{
+   background-color:#25291C;
+   color:#E3E7D3 ; 
+   border: none;
+   font-weight: bolder;
+   font-size: medium;
+}
+.nav-links li a {
+    text-decoration: none;
+   color:#E3E7D3;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.home{
+    background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+    color:#222E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 150px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+.resume{
+    width: 150px;
+    height: 50px;
+    border-radius: 25%;
+    background-color: #25291C;
+    color: #E3E7D3;
+    font-size: large;
+}
+.home img {
+ border-radius: 50%;
+ border-color:#222E50;
+ border-width: 2px;
+ height: 400px;
+ width: 400px;
+}
+#matter{
+     color:#222E50;
+    font-size: larger;
+    text-align: center;
+}
+
+.about{
+       background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+     color:#222E50;
+    font-size: larger;
+    min-height: 100vh;
+    width: 100vw;
+}
+.about h2{
+    text-align: center;
+    width: 100vw;
+}.about p{
+    width: 700px;
+    padding-left: 400px;
+    text-align: center;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education{
+       background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+        color:#222E50;
+    min-height: 75vh;
+     color:#222E50;
+    width: 100vw;
+    padding-top: 0%;
+    text-align: center;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+#d1{
+   font-size: larger;
+   
+}
+.education img{
+    padding-left: 300px;
+}
+.skills{
+    background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+    color:#222E50;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: left;
+    font-size: larger;
+}
+.certificates {
+    padding: 80px 50px;
+    background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+    text-align: center;
+}
+
+.certificates h2 {
+    font-size: 2.5rem;
+    color: #222E50;
+    margin-bottom: 30px;
+}
+
+.certificate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cert-card {
+    background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+    color:#222E50;
+    border: 2px solid #222E50;
+    padding: 20px;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.5s ease-in-out;
+}
+.cert-card:hover{
+    width: 270px;
+    height: 110px;
+}
+.cert-card h3 {
+    margin-bottom: 10px;
+    color:#222E50;
+}
+
+.cert-card a {
+    text-decoration: none;
+    color:#222E50;
+    font-weight: bold;
+}
+.projects {
+    background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+    color:#222E50;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color:#222E50;
+    margin-bottom: 40px;
+    margin-top: 0%;
+    padding-top: 15px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+    color:#222E50;
+    border: 2px solid #222E50;
+    padding: 25px;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+.project-card:hover{
+    width: 320px;
+    height: 265px;
+}
+.project-card h3 {
+    color: #222E50;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color:#222E50;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #222E50;
+    font-weight: bold;
+}
+.contact {
+    padding: 80px 50px;
+    background: linear-gradient(to bottom, #E3E7D3 , transparent 150px),
+        linear-gradient(to top, #E3E7D3,  transparent 150px),
+        linear-gradient(to right, #E3E7D3,  transparent 150px),
+        linear-gradient(to left, #E3E7D3,  transparent 150px),
+       white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #222E50;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.1rem;
+    color: #3C3744;
+    align-items: center;
+}
+
+.contact-item a {
+    color: #222E50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #E3E7D3;
+}
+
+.dark-mode .home,
+.dark-mode .about,
+.dark-mode .education,
+.dark-mode .skills,
+.dark-mode .certificates,
+.dark-mode .projects,
+.dark-mode .contact {
+  background: linear-gradient(to bottom, #2e2e2e , transparent 150px),
+              linear-gradient(to top, #2e2e2e,  transparent 150px),
+              linear-gradient(to right, #2e2e2e,  transparent 150px),
+              linear-gradient(to left, #2e2e2e,  transparent 150px),
+              #1a1a1a;
+  color: #E3E7D3;
+}
+
+
+.dark-mode .navbar {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .navbar h1,
+.dark-mode .nav-links li a {
+  color: #E3E7D3;
+}
+
+.dark-mode #mode {
+  background-color: #2a2a2a;
+  color: #E3E7D3;
+}
+
+.dark-mode .resume {
+  background-color: #E3E7D3;
+  color: #1a1a1a;
+}
+
+.dark-mode #mode {
+  border: 1px solid #E3E7D3;
+}
+
+.dark-mode .cert-card,
+.dark-mode .project-card {
+  background: linear-gradient(to bottom, #3a3a3a , transparent 150px),
+              linear-gradient(to top, #3a3a3a,  transparent 150px),
+              linear-gradient(to right, #3a3a3a,  transparent 150px),
+              linear-gradient(to left, #3a3a3a,  transparent 150px),
+              #2e2e2e;
+  color: #E3E7D3;
+  border-color: #2e2e2e;
+}
+.dark-mode .certificates h2,
+.dark-mode .cert-card h3,
+.dark-mode .projects h2,
+.dark-mode .project-card h3,
+.dark-mode .project-card p,
+.dark-mode .contact h2{
+    color: #E3E7D3;
+}
+
+.dark-mode .cert-card a,
+.dark-mode .project-card a,
+.dark-mode .contact-item a {
+  color: #E3E7D3;
+}
+
+.dark-mode .navbar,
+.dark-mode #mode,
+.dark-mode .navbar h1,
+.dark-mode .navbar .nav-links li a{
+background-color: #E3E7D3;
+color:#2e2e2e ;
+}
+.dark-mode .contact-info,
+.dark-mode .education-entry,
+.dark-mode #matter {
+  color: #E3E7D3;
+}
+body,
+.navbar,
+.navbar h1,
+.nav-links li a,
+.resume,
+#mode,
+.home,
+.about,
+.education,
+.skills,
+.cert-card,
+.project-card,
+.contact,
+.contact-info,
+.project-grid,
+.certificate-grid,
+.project-card a,
+.cert-card a,
+.contact-item a {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
